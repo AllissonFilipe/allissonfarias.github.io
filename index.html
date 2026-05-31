@@ -1,464 +1,492 @@
-<!doctype html>
-<html lang="pt-BR"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Allisson Farias | Desenvolvedor Front-end</title>
-  <meta name="description" content="Portfólio profissional de Allisson Farias - Desenvolvedor Front-end Sênior com mais de 6 anos de experiência.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-<script src="/_sdk/resizing_sdk.js"></script></head>
-<body data-html-import-id="html-import-0" data-template-id="__page-root" style="background: transparent;">
-  <!-- Cursor glow effect -->
-  <div class="cursor-glow" id="cursorGlow" data-html-import-id="html-import-1"></div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Allisson Farias | Desenvolvedor Front-end</title>
+ <meta name="description" content="Portfólio profissional de Allisson Farias - Desenvolvedor Front-end Sênior com mais de 6 anos de experiência." />
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+ <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+ <!-- Cursor glow effect -->
+ <div class="cursor-glow" id="cursorGlow"></div>
 
-  <!-- Navigation -->
-  <nav class="nav" id="nav" data-html-import-id="html-import-2">
-    <div class="nav__container" data-html-import-id="html-import-3">
-      <a href="#hero" class="nav__logo canva-link" data-html-import-id="html-import-4" data-template-id="a-0" style="color: rgb(0, 0, 238);">&lt;AF /&gt;</a>
-      <button class="nav__toggle canva-button" id="navToggle" aria-label="Menu" data-html-import-id="html-import-5" data-template-id="button-1" style="background: rgb(239, 239, 239);">
-        <span data-html-import-id="html-import-6"></span>
-        <span data-html-import-id="html-import-7"></span>
-        <span data-html-import-id="html-import-8"></span>
-      </button>
-      <ul class="nav__menu" id="navMenu" data-html-import-id="html-import-9">
-        <li data-html-import-id="html-import-10" data-template-id="li-2" class="canva-text" style="color: rgb(0, 0, 0);"><a href="#sobre" class="nav__link canva-link" data-html-import-id="html-import-11" data-template-id="a-3" style="color: rgb(0, 0, 238);">Sobre</a></li>
-        <li data-html-import-id="html-import-12" data-template-id="li-4" class="canva-text" style="color: rgb(0, 0, 0);"><a href="#experiencia" class="nav__link canva-link" data-html-import-id="html-import-13" data-template-id="a-5" style="color: rgb(0, 0, 238);">Experiência</a></li>
-        <li data-html-import-id="html-import-14" data-template-id="li-6" class="canva-text" style="color: rgb(0, 0, 0);"><a href="#competencias" class="nav__link canva-link" data-html-import-id="html-import-15" data-template-id="a-7" style="color: rgb(0, 0, 238);">Competências</a></li>
-        <li data-html-import-id="html-import-16" data-template-id="li-8" class="canva-text" style="color: rgb(0, 0, 0);"><a href="#educacao" class="nav__link canva-link" data-html-import-id="html-import-17" data-template-id="a-9" style="color: rgb(0, 0, 238);">Educação</a></li>
-        <li data-html-import-id="html-import-18" data-template-id="li-10" class="canva-text" style="color: rgb(0, 0, 0);"><a href="#contato" class="nav__link canva-link" data-html-import-id="html-import-19" data-template-id="a-11" style="color: rgb(0, 0, 238);">Contato</a></li>
+ <!-- Navigation -->
+ <nav class="nav" id="nav">
+  <div class="nav__container">
+   <a href="#hero" class="nav__logo">&lt;AF /&gt;</a>
+   <button class="nav__toggle" id="navToggle" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+   </button>
+   <ul class="nav__menu" id="navMenu">
+    <li><a href="#sobre" class="nav__link">Sobre</a></li>
+    <li><a href="#experiencia" class="nav__link">Experiência</a></li>
+    <li><a href="#competencias" class="nav__link">Competências</a></li>
+    <li><a href="#educacao" class="nav__link">Educação</a></li>
+    <li><a href="#contato" class="nav__link">Contato</a></li>
+   </ul>
+  </div>
+ </nav>
+
+ <!-- Hero Section -->
+ <section class="hero" id="hero">
+  <div class="hero__particles" id="particles"></div>
+  <div class="hero__content">
+   <p class="hero__greeting animate-in">Olá, eu sou</p>
+   <h1 class="hero__name animate-in">Allisson <span class="highlight">Farias</span></h1>
+   <h2 class="hero__role animate-in">Desenvolvedor Front-end Sênior</h2>
+   <p class="hero__description animate-in">
+    Construindo experiências digitais excepcionais no setor financeiro.
+    <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
+   </p>
+   <div class="hero__cta animate-in">
+    <a href="#contato" class="btn btn--primary">
+     <i class="fas fa-envelope"></i> Entre em contato
+    </a>
+    <a href="#experiencia" class="btn btn--outline">
+     <i class="fas fa-briefcase"></i> Ver experiência
+    </a>
+   </div>
+   <div class="hero__scroll">
+    <a href="#sobre" class="scroll-indicator">
+     <span>Scroll</span>
+     <div class="scroll-indicator__line"></div>
+    </a>
+   </div>
+  </div>
+ </section>
+
+ <!-- Sobre Section -->
+ <section class="section" id="sobre">
+  <div class="container">
+   <h2 class="section__title">
+    <span class="section__number">01.</span> Sobre mim
+   </h2>
+   <div class="about">
+    <div class="about__text">
+     <p>
+      Desenvolvedor Front-end com <strong>mais de 6 anos de experiência</strong> na arquitetura, 
+      desenvolvimento e manutenção de aplicações web modernas e escaláveis.
+     </p>
+     <p>
+      <strong>Especialista no setor bancário e financeiro</strong>, criando plataformas que otimizam a 
+      eficiência operacional e a experiência do usuário. Sólida experiência em liderança técnica, 
+      definição de padrões de arquitetura front-end, code review e metodologias ágeis.
+     </p>
+     <p>
+      Amplo domínio nos ecossistemas <strong>React, Angular, TypeScript e Node.js</strong>, com vivência prática 
+      na implementação de testes automatizados e integração com esteiras de CI/CD.
+     </p>
+    </div>
+    <div class="about__stats">
+     <div class="stat-card">
+      <span class="stat-card__number" data-count="6">0</span><span class="stat-card__plus">+</span>
+      <span class="stat-card__label">Anos de experiência</span>
+     </div>
+     <div class="stat-card">
+      <span class="stat-card__number" data-count="5">0</span>
+      <span class="stat-card__label">Empresas</span>
+     </div>
+     <div class="stat-card">
+      <span class="stat-card__number" data-count="2">0</span>
+      <span class="stat-card__label">Certificações</span>
+     </div>
+     <div class="stat-card">
+      <span class="stat-card__number" data-count="10">0</span><span class="stat-card__plus">+</span>
+      <span class="stat-card__label">Tecnologias</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- Experiência Section -->
+ <section class="section section--dark" id="experiencia">
+  <div class="container">
+   <h2 class="section__title">
+    <span class="section__number">02.</span> Experiência Profissional
+   </h2>
+   <div class="timeline">
+
+    <!-- Santander -->
+    <div class="timeline__item">
+     <div class="timeline__dot"></div>
+     <div class="timeline__content glass-card">
+      <div class="timeline__header">
+       <div>
+        <h3 class="timeline__role">Desenvolvedor Front-end Sênior</h3>
+        <p class="timeline__company">
+         <i class="fas fa-building"></i> Santander
+        </p>
+       </div>
+       <div class="timeline__meta">
+        <span class="timeline__date"><i class="fas fa-calendar"></i> 10/2024 - Presente</span>
+        <span class="timeline__location"><i class="fas fa-map-marker-alt"></i> São Paulo, SP</span>
+       </div>
+      </div>
+      <ul class="timeline__list">
+       <li>Liderei tecnicamente a equipe de front-end na arquitetura e construção de uma aplicação voltada para microcrédito, focada em atender micro e pequenos empreendedores.</li>
+       <li>Desenvolvi plataformas web críticas para o atendimento ao cliente em agências e criei módulos de autenticação focados na prevenção de fraudes bancárias.</li>
+       <li>Projetei e implementei novas jornadas de usuário, atuando desde a criação de novos layouts até integrações complexas com APIs RESTful.</li>
+       <li>Estabeleci padrões de qualidade e arquitetura para a stack de front-end, realizando análise de código (Code Review), elaborando documentações técnicas e estruturando fluxos de integração e entrega contínuas (CI/CD).</li>
+       <li>Garantir a qualidade do software através da criação e manutenção de cenários robustos de testes unitários.</li>
       </ul>
+      <div class="timeline__tags">
+       <span class="tag">Angular</span>
+       <span class="tag">React</span>
+       <span class="tag">TypeScript</span>
+       <span class="tag">Jest</span>
+       <span class="tag">Node.js</span>
+       <span class="tag">Jenkins</span>
+       <span class="tag">SonarQube</span>
+       <span class="tag">Splunk</span>
+       <span class="tag">Git</span>
+       <span class="tag">OpenShift</span>
+      </div>
+     </div>
     </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero" data-html-import-id="html-import-20">
-    <div class="hero__particles" id="particles" data-html-import-id="html-import-21"></div>
-    <div class="hero__content" data-html-import-id="html-import-22">
-      <p class="hero__greeting animate-in canva-text" data-html-import-id="html-import-23" data-template-id="p-12" style="color: rgb(0, 0, 0);">Olá, eu sou</p>
-      <h1 class="hero__name animate-in canva-text" data-html-import-id="html-import-24" data-template-id="h1-13" style="color: rgb(0, 0, 0);"><canva-inline-text data-template-id="canva-inline-text-14" class="canva-text" style="color: rgb(0, 0, 0);">Allisson </canva-inline-text><span class="highlight canva-text" data-html-import-id="html-import-25" data-template-id="span-15" style="color: rgb(0, 0, 0);">Farias</span></h1>
-      <h2 class="hero__role animate-in canva-text" data-html-import-id="html-import-26" data-template-id="h2-16" style="color: rgb(0, 0, 0);">Desenvolvedor Front-end Sênior</h2>
-      <p class="hero__description animate-in canva-text" data-html-import-id="html-import-27" data-template-id="p-17" style="color: rgb(0, 0, 0);"><canva-inline-text data-template-id="canva-inline-text-18" class="canva-text" style="color: rgb(0, 0, 0);">Construindo experiências digitais excepcionais no setor financeiro. </canva-inline-text><span class="typed-text" id="typedText" data-html-import-id="html-import-28"></span><span class="cursor-blink canva-text" data-html-import-id="html-import-29" data-template-id="span-19" style="color: rgb(0, 0, 0);">|</span>
-      </p>
-      <div class="hero__cta animate-in" data-html-import-id="html-import-30">
-        <a href="#contato" class="btn btn--primary canva-link" data-html-import-id="html-import-31" data-template-id="a-20" style="color: rgb(0, 0, 238);">
-          <i class="fas fa-envelope" data-html-import-id="html-import-32"></i><canva-inline-text data-template-id="canva-inline-text-21" class="canva-text" style="color: rgb(0, 0, 238);"> Entre em contato </canva-inline-text></a>
-        <a href="#experiencia" class="btn btn--outline canva-link" data-html-import-id="html-import-33" data-template-id="a-22" style="color: rgb(0, 0, 238);">
-          <i class="fas fa-briefcase" data-html-import-id="html-import-34"></i><canva-inline-text data-template-id="canva-inline-text-23" class="canva-text" style="color: rgb(0, 0, 238);"> Ver experiência</canva-inline-text></a>
+    <!-- Nava -->
+    <div class="timeline__item">
+     <div class="timeline__dot"></div>
+     <div class="timeline__content glass-card">
+      <div class="timeline__header">
+       <div>
+        <h3 class="timeline__role">Desenvolvedor Front-end Pleno</h3>
+        <p class="timeline__company">
+         <i class="fas fa-building"></i> Nava
+        </p>
+       </div>
+       <div class="timeline__meta">
+        <span class="timeline__date"><i class="fas fa-calendar"></i> 09/2022 - 10/2024</span>
+        <span class="timeline__location"><i class="fas fa-map-marker-alt"></i> São Paulo, SP</span>
+       </div>
       </div>
-      <div class="hero__scroll" data-html-import-id="html-import-35">
-        <a href="#sobre" class="scroll-indicator canva-link" data-html-import-id="html-import-36" data-template-id="a-24" style="color: rgb(0, 0, 238);">
-          <span data-html-import-id="html-import-37" data-template-id="span-25" class="canva-text" style="color: rgb(0, 0, 238);">Scroll</span>
-          <div class="scroll-indicator__line" data-html-import-id="html-import-38"></div>
-        </a>
+      <ul class="timeline__list">
+       <li>Desenvolvi uma plataforma web de alta performance voltada para a indicação de produtos dentro do setor bancário, utilizando metodologias ágeis (Scrum/Kanban).</li>
+       <li>Construí e otimizei aplicações web escaláveis migrando/utilizando o ecossistema Angular, garantindo a excelência no código e na experiência do usuário.</li>
+       <li>Implementei integrações front-end com diversas APIs externas e internas, construindo novas jornadas e layouts responsivos.</li>
+       <li>Atuei ativamente na garantia de qualidade, desenvolvendo testes unitários e participando da configuração de pipelines de CI/CD.</li>
+      </ul>
+      <div class="timeline__tags">
+       <span class="tag">Angular</span>
+       <span class="tag">React</span>
+       <span class="tag">TypeScript</span>
+       <span class="tag">Jest</span>
+       <span class="tag">Node.js</span>
+       <span class="tag">Jenkins</span>
+       <span class="tag">SonarQube</span>
+       <span class="tag">Splunk</span>
+       <span class="tag">Git</span>
+       <span class="tag">OpenShift</span>
       </div>
+     </div>
     </div>
-  </section>
 
-  <!-- Sobre Section -->
-  <section class="section" id="sobre" data-html-import-id="html-import-39">
-    <div class="container" data-html-import-id="html-import-40">
-      <h2 class="section__title canva-text" data-html-import-id="html-import-41" data-template-id="h2-26" style="color: rgb(0, 0, 0);">
-        <span class="section__number canva-text" data-html-import-id="html-import-42" data-template-id="span-27" style="color: rgb(0, 0, 0);">01.</span><canva-inline-text data-template-id="canva-inline-text-28" class="canva-text" style="color: rgb(0, 0, 0);"> Sobre mim</canva-inline-text></h2>
-      <div class="about" data-html-import-id="html-import-43">
-        <div class="about__text" data-html-import-id="html-import-44">
-          <p data-html-import-id="html-import-45" data-template-id="p-29" class="canva-text" style="color: rgb(0, 0, 0);"><canva-inline-text data-template-id="canva-inline-text-30" class="canva-text" style="color: rgb(0, 0, 0);">Desenvolvedor Front-end com </canva-inline-text><strong data-html-import-id="html-import-46" data-template-id="strong-31" class="canva-text" style="color: rgb(0, 0, 0);">mais de 6 anos de experiência</strong><canva-inline-text data-template-id="canva-inline-text-32" class="canva-text" style="color: rgb(0, 0, 0);"> na arquitetura, desenvolvimento e manutenção de aplicações web modernas e escaláveis.</canva-inline-text></p>
-          <p data-html-import-id="html-import-47" data-template-id="p-33" class="canva-text" style="color: rgb(0, 0, 0);">
-            <strong data-html-import-id="html-import-48" data-template-id="strong-34" class="canva-text" style="color: rgb(0, 0, 0);">Especialista no setor bancário e financeiro</strong><canva-inline-text data-template-id="canva-inline-text-35" class="canva-text" style="color: rgb(0, 0, 0);">, criando plataformas que otimizam a eficiência operacional e a experiência do usuário. Sólida experiência em liderança técnica, definição de padrões de arquitetura front-end, code review e metodologias ágeis.</canva-inline-text></p>
-          <p data-html-import-id="html-import-49" data-template-id="p-36" class="canva-text" style="color: rgb(0, 0, 0);"><canva-inline-text data-template-id="canva-inline-text-37" class="canva-text" style="color: rgb(0, 0, 0);">Amplo domínio nos ecossistemas </canva-inline-text><strong data-html-import-id="html-import-50" data-template-id="strong-38" class="canva-text" style="color: rgb(0, 0, 0);">React, Angular, TypeScript e Node.js</strong><canva-inline-text data-template-id="canva-inline-text-39" class="canva-text" style="color: rgb(0, 0, 0);">, com vivência prática na implementação de testes automatizados e integração com esteiras de CI/CD.</canva-inline-text></p>
-        </div>
-        <div class="about__stats" data-html-import-id="html-import-51">
-          <div class="stat-card" data-html-import-id="html-import-52">
-            <span class="stat-card__number canva-text" data-count="6" data-html-import-id="html-import-53" data-template-id="span-40" style="color: rgb(0, 0, 0);">0</span><span class="stat-card__plus canva-text" data-html-import-id="html-import-54" data-template-id="span-41" style="color: rgb(0, 0, 0);">+</span>
-            <span class="stat-card__label canva-text" data-html-import-id="html-import-55" data-template-id="span-42" style="color: rgb(0, 0, 0);">Anos de experiência</span>
-          </div>
-          <div class="stat-card" data-html-import-id="html-import-56">
-            <span class="stat-card__number canva-text" data-count="5" data-html-import-id="html-import-57" data-template-id="span-43" style="color: rgb(0, 0, 0);">0</span>
-            <span class="stat-card__label canva-text" data-html-import-id="html-import-58" data-template-id="span-44" style="color: rgb(0, 0, 0);">Empresas</span>
-          </div>
-          <div class="stat-card" data-html-import-id="html-import-59">
-            <span class="stat-card__number canva-text" data-count="2" data-html-import-id="html-import-60" data-template-id="span-45" style="color: rgb(0, 0, 0);">0</span>
-            <span class="stat-card__label canva-text" data-html-import-id="html-import-61" data-template-id="span-46" style="color: rgb(0, 0, 0);">Certificações</span>
-          </div>
-          <div class="stat-card" data-html-import-id="html-import-62">
-            <span class="stat-card__number canva-text" data-count="10" data-html-import-id="html-import-63" data-template-id="span-47" style="color: rgb(0, 0, 0);">0</span><span class="stat-card__plus canva-text" data-html-import-id="html-import-64" data-template-id="span-48" style="color: rgb(0, 0, 0);">+</span>
-            <span class="stat-card__label canva-text" data-html-import-id="html-import-65" data-template-id="span-49" style="color: rgb(0, 0, 0);">Tecnologias</span>
-          </div>
-        </div>
+    <!-- IBM -->
+    <div class="timeline__item">
+     <div class="timeline__dot"></div>
+     <div class="timeline__content glass-card">
+      <div class="timeline__header">
+       <div>
+        <h3 class="timeline__role">Desenvolvedor Full Stack Pleno</h3>
+        <p class="timeline__company">
+         <i class="fas fa-building"></i> IBM
+        </p>
+       </div>
+       <div class="timeline__meta">
+        <span class="timeline__date"><i class="fas fa-calendar"></i> 01/2022 - 09/2022</span>
+        <span class="timeline__location"><i class="fas fa-map-marker-alt"></i> São Paulo, SP</span>
+       </div>
       </div>
+      <ul class="timeline__list">
+       <li>Desenvolvi soluções end-to-end em uma plataforma web focada na recuperação de crédito para o setor bancário.</li>
+       <li>Construí camadas BFF (Backend For Frontend) para orquestrar a comunicação otimizada com web services e microsserviços.</li>
+       <li>Projetei novos layouts e jornadas de usuário, assegurando a integração fluida entre o front-end e o back-end.</li>
+       <li>Elaborei testes unitários e documentações técnicas detalhadas, além de realizar análises de qualidade de código (SonarQube) e monitoramento de CI/CD.</li>
+      </ul>
+      <div class="timeline__tags">
+       <span class="tag">Angular</span>
+       <span class="tag">TypeScript</span>
+       <span class="tag">Node.js</span>
+       <span class="tag">.NET</span>
+       <span class="tag">AWS</span>
+       <span class="tag">Jest</span>
+       <span class="tag">Cypress</span>
+       <span class="tag">SonarQube</span>
+       <span class="tag">Git</span>
+      </div>
+     </div>
     </div>
-  </section>
 
-  <!-- Experiência Section -->
-  <section class="section section--dark" id="experiencia" data-html-import-id="html-import-66">
-    <div class="container" data-html-import-id="html-import-67">
-      <h2 class="section__title canva-text" data-html-import-id="html-import-68" data-template-id="h2-50" style="color: rgb(0, 0, 0);">
-        <span class="section__number canva-text" data-html-import-id="html-import-69" data-template-id="span-51" style="color: rgb(0, 0, 0);">02.</span><canva-inline-text data-template-id="canva-inline-text-52" class="canva-text" style="color: rgb(0, 0, 0);"> Experiência Profissional</canva-inline-text></h2>
-      <div class="timeline" data-html-import-id="html-import-70">
-
-        <!-- Santander -->
-        <div class="timeline__item" data-html-import-id="html-import-71">
-          <div class="timeline__dot" data-html-import-id="html-import-72"></div>
-          <div class="timeline__content glass-card" data-html-import-id="html-import-73">
-            <div class="timeline__header" data-html-import-id="html-import-74">
-              <div data-html-import-id="html-import-75">
-                <h3 class="timeline__role canva-text" data-html-import-id="html-import-76" data-template-id="h3-53" style="color: rgb(0, 0, 0);">Desenvolvedor Front-end Sênior</h3>
-                <p class="timeline__company canva-text" data-html-import-id="html-import-77" data-template-id="p-54" style="color: rgb(0, 0, 0);">
-                  <i class="fas fa-building" data-html-import-id="html-import-78"></i><canva-inline-text data-template-id="canva-inline-text-55" class="canva-text" style="color: rgb(0, 0, 0);"> Santander</canva-inline-text></p>
-              </div>
-              <div class="timeline__meta" data-html-import-id="html-import-79">
-                <span class="timeline__date canva-text" data-html-import-id="html-import-80" data-template-id="span-56" style="color: rgb(0, 0, 0);"><i class="fas fa-calendar" data-html-import-id="html-import-81"></i><canva-inline-text data-template-id="canva-inline-text-57" class="canva-text" style="color: rgb(0, 0, 0);"> 10/2024 - Presente</canva-inline-text></span>
-                <span class="timeline__location canva-text" data-html-import-id="html-import-82" data-template-id="span-58" style="color: rgb(0, 0, 0);"><i class="fas fa-map-marker-alt" data-html-import-id="html-import-83"></i><canva-inline-text data-template-id="canva-inline-text-59" class="canva-text" style="color: rgb(0, 0, 0);"> São Paulo, SP</canva-inline-text></span>
-              </div>
-            </div>
-            <ul class="timeline__list" data-html-import-id="html-import-84">
-              <li data-html-import-id="html-import-85" data-template-id="li-60" class="canva-text" style="color: rgb(0, 0, 0);">Liderei tecnicamente a equipe de front-end na arquitetura e construção de uma aplicação voltada para microcrédito, focada em atender micro e pequenos empreendedores.</li>
-              <li data-html-import-id="html-import-86" data-template-id="li-61" class="canva-text" style="color: rgb(0, 0, 0);">Desenvolvi plataformas web críticas para o atendimento ao cliente em agências e criei módulos de autenticação focados na prevenção de fraudes bancárias.</li>
-              <li data-html-import-id="html-import-87" data-template-id="li-62" class="canva-text" style="color: rgb(0, 0, 0);">Projetei e implementei novas jornadas de usuário, atuando desde a criação de novos layouts até integrações complexas com APIs RESTful.</li>
-              <li data-html-import-id="html-import-88" data-template-id="li-63" class="canva-text" style="color: rgb(0, 0, 0);">Estabeleci padrões de qualidade e arquitetura para a stack de front-end, realizando análise de código (Code Review), elaborando documentações técnicas e estruturando fluxos de integração e entrega contínuas (CI/CD).</li>
-              <li data-html-import-id="html-import-89" data-template-id="li-64" class="canva-text" style="color: rgb(0, 0, 0);">Garantir a qualidade do software através da criação e manutenção de cenários robustos de testes unitários.</li>
-            </ul>
-            <div class="timeline__tags" data-html-import-id="html-import-90">
-              <span class="tag canva-text" data-html-import-id="html-import-91" data-template-id="span-65" style="color: rgb(0, 0, 0);">Angular</span>
-              <span class="tag canva-text" data-html-import-id="html-import-92" data-template-id="span-66" style="color: rgb(0, 0, 0);">React</span>
-              <span class="tag canva-text" data-html-import-id="html-import-93" data-template-id="span-67" style="color: rgb(0, 0, 0);">TypeScript</span>
-              <span class="tag canva-text" data-html-import-id="html-import-94" data-template-id="span-68" style="color: rgb(0, 0, 0);">Jest</span>
-              <span class="tag canva-text" data-html-import-id="html-import-95" data-template-id="span-69" style="color: rgb(0, 0, 0);">Node.js</span>
-              <span class="tag canva-text" data-html-import-id="html-import-96" data-template-id="span-70" style="color: rgb(0, 0, 0);">Jenkins</span>
-              <span class="tag canva-text" data-html-import-id="html-import-97" data-template-id="span-71" style="color: rgb(0, 0, 0);">SonarQube</span>
-              <span class="tag canva-text" data-html-import-id="html-import-98" data-template-id="span-72" style="color: rgb(0, 0, 0);">Splunk</span>
-              <span class="tag canva-text" data-html-import-id="html-import-99" data-template-id="span-73" style="color: rgb(0, 0, 0);">Git</span>
-              <span class="tag canva-text" data-html-import-id="html-import-100" data-template-id="span-74" style="color: rgb(0, 0, 0);">OpenShift</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Nava -->
-        <div class="timeline__item" data-html-import-id="html-import-101">
-          <div class="timeline__dot" data-html-import-id="html-import-102"></div>
-          <div class="timeline__content glass-card" data-html-import-id="html-import-103">
-            <div class="timeline__header" data-html-import-id="html-import-104">
-              <div data-html-import-id="html-import-105">
-                <h3 class="timeline__role canva-text" data-html-import-id="html-import-106" data-template-id="h3-75" style="color: rgb(0, 0, 0);">Desenvolvedor Front-end Pleno</h3>
-                <p class="timeline__company canva-text" data-html-import-id="html-import-107" data-template-id="p-76" style="color: rgb(0, 0, 0);">
-                  <i class="fas fa-building" data-html-import-id="html-import-108"></i><canva-inline-text data-template-id="canva-inline-text-77" class="canva-text" style="color: rgb(0, 0, 0);"> Nava</canva-inline-text></p>
-              </div>
-              <div class="timeline__meta" data-html-import-id="html-import-109">
-                <span class="timeline__date canva-text" data-html-import-id="html-import-110" data-template-id="span-78" style="color: rgb(0, 0, 0);"><i class="fas fa-calendar" data-html-import-id="html-import-111"></i><canva-inline-text data-template-id="canva-inline-text-79" class="canva-text" style="color: rgb(0, 0, 0);"> 09/2022 - 10/2024</canva-inline-text></span>
-                <span class="timeline__location canva-text" data-html-import-id="html-import-112" data-template-id="span-80" style="color: rgb(0, 0, 0);"><i class="fas fa-map-marker-alt" data-html-import-id="html-import-113"></i><canva-inline-text data-template-id="canva-inline-text-81" class="canva-text" style="color: rgb(0, 0, 0);"> São Paulo, SP</canva-inline-text></span>
-              </div>
-            </div>
-            <ul class="timeline__list" data-html-import-id="html-import-114">
-              <li data-html-import-id="html-import-115" data-template-id="li-82" class="canva-text" style="color: rgb(0, 0, 0);">Desenvolvi uma plataforma web de alta performance voltada para a indicação de produtos dentro do setor bancário, utilizando metodologias ágeis (Scrum/Kanban).</li>
-              <li data-html-import-id="html-import-116" data-template-id="li-83" class="canva-text" style="color: rgb(0, 0, 0);">Construí e otimizei aplicações web escaláveis migrando/utilizando o ecossistema Angular, garantindo a excelência no código e na experiência do usuário.</li>
-              <li data-html-import-id="html-import-117" data-template-id="li-84" class="canva-text" style="color: rgb(0, 0, 0);">Implementei integrações front-end com diversas APIs externas e internas, construindo novas jornadas e layouts responsivos.</li>
-              <li data-html-import-id="html-import-118" data-template-id="li-85" class="canva-text" style="color: rgb(0, 0, 0);">Atuei ativamente na garantia de qualidade, desenvolvendo testes unitários e participando da configuração de pipelines de CI/CD.</li>
-            </ul>
-            <div class="timeline__tags" data-html-import-id="html-import-119">
-              <span class="tag canva-text" data-html-import-id="html-import-120" data-template-id="span-86" style="color: rgb(0, 0, 0);">Angular</span>
-              <span class="tag canva-text" data-html-import-id="html-import-121" data-template-id="span-87" style="color: rgb(0, 0, 0);">React</span>
-              <span class="tag canva-text" data-html-import-id="html-import-122" data-template-id="span-88" style="color: rgb(0, 0, 0);">TypeScript</span>
-              <span class="tag canva-text" data-html-import-id="html-import-123" data-template-id="span-89" style="color: rgb(0, 0, 0);">Jest</span>
-              <span class="tag canva-text" data-html-import-id="html-import-124" data-template-id="span-90" style="color: rgb(0, 0, 0);">Node.js</span>
-              <span class="tag canva-text" data-html-import-id="html-import-125" data-template-id="span-91" style="color: rgb(0, 0, 0);">Jenkins</span>
-              <span class="tag canva-text" data-html-import-id="html-import-126" data-template-id="span-92" style="color: rgb(0, 0, 0);">SonarQube</span>
-              <span class="tag canva-text" data-html-import-id="html-import-127" data-template-id="span-93" style="color: rgb(0, 0, 0);">Splunk</span>
-              <span class="tag canva-text" data-html-import-id="html-import-128" data-template-id="span-94" style="color: rgb(0, 0, 0);">Git</span>
-              <span class="tag canva-text" data-html-import-id="html-import-129" data-template-id="span-95" style="color: rgb(0, 0, 0);">OpenShift</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- IBM -->
-        <div class="timeline__item" data-html-import-id="html-import-130">
-          <div class="timeline__dot" data-html-import-id="html-import-131"></div>
-          <div class="timeline__content glass-card" data-html-import-id="html-import-132">
-            <div class="timeline__header" data-html-import-id="html-import-133">
-              <div data-html-import-id="html-import-134">
-                <h3 class="timeline__role canva-text" data-html-import-id="html-import-135" data-template-id="h3-96" style="color: rgb(0, 0, 0);">Desenvolvedor Full Stack Pleno</h3>
-                <p class="timeline__company canva-text" data-html-import-id="html-import-136" data-template-id="p-97" style="color: rgb(0, 0, 0);">
-                  <i class="fas fa-building" data-html-import-id="html-import-137"></i><canva-inline-text data-template-id="canva-inline-text-98" class="canva-text" style="color: rgb(0, 0, 0);"> IBM</canva-inline-text></p>
-              </div>
-              <div class="timeline__meta" data-html-import-id="html-import-138">
-                <span class="timeline__date canva-text" data-html-import-id="html-import-139" data-template-id="span-99" style="color: rgb(0, 0, 0);"><i class="fas fa-calendar" data-html-import-id="html-import-140"></i><canva-inline-text data-template-id="canva-inline-text-100" class="canva-text" style="color: rgb(0, 0, 0);"> 01/2022 - 09/2022</canva-inline-text></span>
-                <span class="timeline__location canva-text" data-html-import-id="html-import-141" data-template-id="span-101" style="color: rgb(0, 0, 0);"><i class="fas fa-map-marker-alt" data-html-import-id="html-import-142"></i><canva-inline-text data-template-id="canva-inline-text-102" class="canva-text" style="color: rgb(0, 0, 0);"> São Paulo, SP</canva-inline-text></span>
-              </div>
-            </div>
-            <ul class="timeline__list" data-html-import-id="html-import-143">
-              <li data-html-import-id="html-import-144" data-template-id="li-103" class="canva-text" style="color: rgb(0, 0, 0);">Desenvolvi soluções end-to-end em uma plataforma web focada na recuperação de crédito para o setor bancário.</li>
-              <li data-html-import-id="html-import-145" data-template-id="li-104" class="canva-text" style="color: rgb(0, 0, 0);">Construí camadas BFF (Backend For Frontend) para orquestrar a comunicação otimizada com web services e microsserviços.</li>
-              <li data-html-import-id="html-import-146" data-template-id="li-105" class="canva-text" style="color: rgb(0, 0, 0);">Projetei novos layouts e jornadas de usuário, assegurando a integração fluida entre o front-end e o back-end.</li>
-              <li data-html-import-id="html-import-147" data-template-id="li-106" class="canva-text" style="color: rgb(0, 0, 0);">Elaborei testes unitários e documentações técnicas detalhadas, além de realizar análises de qualidade de código (SonarQube) e monitoramento de CI/CD.</li>
-            </ul>
-            <div class="timeline__tags" data-html-import-id="html-import-148">
-              <span class="tag canva-text" data-html-import-id="html-import-149" data-template-id="span-107" style="color: rgb(0, 0, 0);">Angular</span>
-              <span class="tag canva-text" data-html-import-id="html-import-150" data-template-id="span-108" style="color: rgb(0, 0, 0);">TypeScript</span>
-              <span class="tag canva-text" data-html-import-id="html-import-151" data-template-id="span-109" style="color: rgb(0, 0, 0);">Node.js</span>
-              <span class="tag canva-text" data-html-import-id="html-import-152" data-template-id="span-110" style="color: rgb(0, 0, 0);">.NET</span>
-              <span class="tag canva-text" data-html-import-id="html-import-153" data-template-id="span-111" style="color: rgb(0, 0, 0);">AWS</span>
-              <span class="tag canva-text" data-html-import-id="html-import-154" data-template-id="span-112" style="color: rgb(0, 0, 0);">Jest</span>
-              <span class="tag canva-text" data-html-import-id="html-import-155" data-template-id="span-113" style="color: rgb(0, 0, 0);">Cypress</span>
-              <span class="tag canva-text" data-html-import-id="html-import-156" data-template-id="span-114" style="color: rgb(0, 0, 0);">SonarQube</span>
-              <span class="tag canva-text" data-html-import-id="html-import-157" data-template-id="span-115" style="color: rgb(0, 0, 0);">Git</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Accenture -->
-        <div class="timeline__item" data-html-import-id="html-import-158">
-          <div class="timeline__dot" data-html-import-id="html-import-159"></div>
-          <div class="timeline__content glass-card" data-html-import-id="html-import-160">
-            <div class="timeline__header" data-html-import-id="html-import-161">
-              <div data-html-import-id="html-import-162">
-                <h3 class="timeline__role canva-text" data-html-import-id="html-import-163" data-template-id="h3-116" style="color: rgb(0, 0, 0);">Desenvolvedor Front-end Pleno</h3>
-                <p class="timeline__company canva-text" data-html-import-id="html-import-164" data-template-id="p-117" style="color: rgb(0, 0, 0);">
-                  <i class="fas fa-building" data-html-import-id="html-import-165"></i><canva-inline-text data-template-id="canva-inline-text-118" class="canva-text" style="color: rgb(0, 0, 0);"> Accenture</canva-inline-text></p>
-              </div>
-              <div class="timeline__meta" data-html-import-id="html-import-166">
-                <span class="timeline__date canva-text" data-html-import-id="html-import-167" data-template-id="span-119" style="color: rgb(0, 0, 0);"><i class="fas fa-calendar" data-html-import-id="html-import-168"></i><canva-inline-text data-template-id="canva-inline-text-120" class="canva-text" style="color: rgb(0, 0, 0);"> 08/2019 - 01/2022</canva-inline-text></span>
-                <span class="timeline__location canva-text" data-html-import-id="html-import-169" data-template-id="span-121" style="color: rgb(0, 0, 0);"><i class="fas fa-map-marker-alt" data-html-import-id="html-import-170"></i><canva-inline-text data-template-id="canva-inline-text-122" class="canva-text" style="color: rgb(0, 0, 0);"> Recife, PE</canva-inline-text></span>
-              </div>
-            </div>
-            <ul class="timeline__list" data-html-import-id="html-import-171">
-              <li data-html-import-id="html-import-172" data-template-id="li-123" class="canva-text" style="color: rgb(0, 0, 0);">Desenvolvi plataformas web corporativas voltadas para a parametrização de sistemas e processos de crédito imobiliário bancário.</li>
-              <li data-html-import-id="html-import-173" data-template-id="li-124" class="canva-text" style="color: rgb(0, 0, 0);">Implementei integrações de dados eficientes utilizando APIs REST e GraphQL, criando interfaces dinâmicas e responsivas.</li>
-              <li data-html-import-id="html-import-174" data-template-id="li-125" class="canva-text" style="color: rgb(0, 0, 0);">Mentorei e apoiei tecnicamente o desenvolvimento de novos programadores juniores integrados através do projeto START da empresa.</li>
-              <li data-html-import-id="html-import-175" data-template-id="li-126" class="canva-text" style="color: rgb(0, 0, 0);">Garantir a confiabilidade do código através da criação de cenários de testes unitários.</li>
-            </ul>
-            <div class="timeline__tags" data-html-import-id="html-import-176">
-              <span class="tag canva-text" data-html-import-id="html-import-177" data-template-id="span-127" style="color: rgb(0, 0, 0);">Angular</span>
-              <span class="tag canva-text" data-html-import-id="html-import-178" data-template-id="span-128" style="color: rgb(0, 0, 0);">TypeScript</span>
-              <span class="tag canva-text" data-html-import-id="html-import-179" data-template-id="span-129" style="color: rgb(0, 0, 0);">Node.js</span>
-              <span class="tag canva-text" data-html-import-id="html-import-180" data-template-id="span-130" style="color: rgb(0, 0, 0);">Azure</span>
-              <span class="tag canva-text" data-html-import-id="html-import-181" data-template-id="span-131" style="color: rgb(0, 0, 0);">Jest</span>
-              <span class="tag canva-text" data-html-import-id="html-import-182" data-template-id="span-132" style="color: rgb(0, 0, 0);">SonarQube</span>
-              <span class="tag canva-text" data-html-import-id="html-import-183" data-template-id="span-133" style="color: rgb(0, 0, 0);">Splunk</span>
-              <span class="tag canva-text" data-html-import-id="html-import-184" data-template-id="span-134" style="color: rgb(0, 0, 0);">GraphQL</span>
-              <span class="tag canva-text" data-html-import-id="html-import-185" data-template-id="span-135" style="color: rgb(0, 0, 0);">Git</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Estágio -->
-        <div class="timeline__item" data-html-import-id="html-import-186">
-          <div class="timeline__dot" data-html-import-id="html-import-187"></div>
-          <div class="timeline__content glass-card" data-html-import-id="html-import-188">
-            <div class="timeline__header" data-html-import-id="html-import-189">
-              <div data-html-import-id="html-import-190">
-                <h3 class="timeline__role canva-text" data-html-import-id="html-import-191" data-template-id="h3-136" style="color: rgb(0, 0, 0);">Estagiário em Desenvolvimento de Software</h3>
-                <p class="timeline__company canva-text" data-html-import-id="html-import-192" data-template-id="p-137" style="color: rgb(0, 0, 0);">
-                  <i class="fas fa-building" data-html-import-id="html-import-193"></i><canva-inline-text data-template-id="canva-inline-text-138" class="canva-text" style="color: rgb(0, 0, 0);"> Secretaria da Controladoria Geral do Estado</canva-inline-text></p>
-              </div>
-              <div class="timeline__meta" data-html-import-id="html-import-194">
-                <span class="timeline__date canva-text" data-html-import-id="html-import-195" data-template-id="span-139" style="color: rgb(0, 0, 0);"><i class="fas fa-calendar" data-html-import-id="html-import-196"></i><canva-inline-text data-template-id="canva-inline-text-140" class="canva-text" style="color: rgb(0, 0, 0);"> 05/2018 - 07/2019</canva-inline-text></span>
-                <span class="timeline__location canva-text" data-html-import-id="html-import-197" data-template-id="span-141" style="color: rgb(0, 0, 0);"><i class="fas fa-map-marker-alt" data-html-import-id="html-import-198"></i><canva-inline-text data-template-id="canva-inline-text-142" class="canva-text" style="color: rgb(0, 0, 0);"> Recife, PE</canva-inline-text></span>
-              </div>
-            </div>
-            <ul class="timeline__list" data-html-import-id="html-import-199">
-              <li data-html-import-id="html-import-200" data-template-id="li-143" class="canva-text" style="color: rgb(0, 0, 0);">Desenvolvi plataformas web full stack para os diversos setores da secretaria governamental e atuei na manutenção do portal da intranet.</li>
-              <li data-html-import-id="html-import-201" data-template-id="li-144" class="canva-text" style="color: rgb(0, 0, 0);">Integrei sistemas legados com novas soluções web através de APIs.</li>
-            </ul>
-            <div class="timeline__tags" data-html-import-id="html-import-202">
-              <span class="tag canva-text" data-html-import-id="html-import-203" data-template-id="span-145" style="color: rgb(0, 0, 0);">Python</span>
-              <span class="tag canva-text" data-html-import-id="html-import-204" data-template-id="span-146" style="color: rgb(0, 0, 0);">Flask</span>
-              <span class="tag canva-text" data-html-import-id="html-import-205" data-template-id="span-147" style="color: rgb(0, 0, 0);">JavaScript</span>
-              <span class="tag canva-text" data-html-import-id="html-import-206" data-template-id="span-148" style="color: rgb(0, 0, 0);">jQuery</span>
-              <span class="tag canva-text" data-html-import-id="html-import-207" data-template-id="span-149" style="color: rgb(0, 0, 0);">WordPress</span>
-              <span class="tag canva-text" data-html-import-id="html-import-208" data-template-id="span-150" style="color: rgb(0, 0, 0);">PostgreSQL</span>
-              <span class="tag canva-text" data-html-import-id="html-import-209" data-template-id="span-151" style="color: rgb(0, 0, 0);">Git</span>
-            </div>
-          </div>
-        </div>
-
+    <!-- Accenture -->
+    <div class="timeline__item">
+     <div class="timeline__dot"></div>
+     <div class="timeline__content glass-card">
+      <div class="timeline__header">
+       <div>
+        <h3 class="timeline__role">Desenvolvedor Front-end Pleno</h3>
+        <p class="timeline__company">
+         <i class="fas fa-building"></i> Accenture
+        </p>
+       </div>
+       <div class="timeline__meta">
+        <span class="timeline__date"><i class="fas fa-calendar"></i> 08/2019 - 01/2022</span>
+        <span class="timeline__location"><i class="fas fa-map-marker-alt"></i> Recife, PE</span>
+       </div>
       </div>
+      <ul class="timeline__list">
+       <li>Desenvolvi plataformas web corporativas voltadas para a parametrização de sistemas e processos de crédito imobiliário bancário.</li>
+       <li>Implementei integrações de dados eficientes utilizando APIs REST e GraphQL, criando interfaces dinâmicas e responsivas.</li>
+       <li>Mentorei e apoiei tecnicamente o desenvolvimento de novos programadores juniores integrados através do projeto START da empresa.</li>
+       <li>Garantir a confiabilidade do código através da criação de cenários de testes unitários.</li>
+      </ul>
+      <div class="timeline__tags">
+       <span class="tag">Angular</span>
+       <span class="tag">TypeScript</span>
+       <span class="tag">Node.js</span>
+       <span class="tag">Azure</span>
+       <span class="tag">Jest</span>
+       <span class="tag">SonarQube</span>
+       <span class="tag">Splunk</span>
+       <span class="tag">GraphQL</span>
+       <span class="tag">Git</span>
+      </div>
+     </div>
     </div>
-  </section>
 
-  <!-- Competências Section -->
-  <section class="section" id="competencias" data-html-import-id="html-import-210">
-    <div class="container" data-html-import-id="html-import-211">
-      <h2 class="section__title canva-text" data-html-import-id="html-import-212" data-template-id="h2-152" style="color: rgb(0, 0, 0);">
-        <span class="section__number canva-text" data-html-import-id="html-import-213" data-template-id="span-153" style="color: rgb(0, 0, 0);">03.</span><canva-inline-text data-template-id="canva-inline-text-154" class="canva-text" style="color: rgb(0, 0, 0);"> Competências Técnicas</canva-inline-text></h2>
-      <div class="skills-grid" data-html-import-id="html-import-214">
-
-        <div class="skill-category glass-card" data-html-import-id="html-import-215">
-          <div class="skill-category__icon" data-html-import-id="html-import-216">
-            <i class="fas fa-code" data-html-import-id="html-import-217"></i>
-          </div>
-          <h3 class="skill-category__title canva-text" data-html-import-id="html-import-218" data-template-id="h3-155" style="color: rgb(0, 0, 0);">Front-end</h3>
-          <div class="skill-category__items" data-html-import-id="html-import-219">
-            <div class="skill-pill canva-container" data-html-import-id="html-import-220" data-template-id="div-156" style="color: rgb(0, 0, 0);">React.js</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-221" data-template-id="div-157" style="color: rgb(0, 0, 0);">Angular 2+</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-222" data-template-id="div-158" style="color: rgb(0, 0, 0);">RxJS</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-223" data-template-id="div-159" style="color: rgb(0, 0, 0);">NgRx</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-224" data-template-id="div-160" style="color: rgb(0, 0, 0);">JavaScript</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-225" data-template-id="div-161" style="color: rgb(0, 0, 0);">TypeScript</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-226" data-template-id="div-162" style="color: rgb(0, 0, 0);">HTML5</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-227" data-template-id="div-163" style="color: rgb(0, 0, 0);">CSS3</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-228" data-template-id="div-164" style="color: rgb(0, 0, 0);">SASS</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-229" data-template-id="div-165" style="color: rgb(0, 0, 0);">Bootstrap</div>
-          </div>
-        </div>
-
-        <div class="skill-category glass-card" data-html-import-id="html-import-230">
-          <div class="skill-category__icon" data-html-import-id="html-import-231">
-            <i class="fas fa-server" data-html-import-id="html-import-232"></i>
-          </div>
-          <h3 class="skill-category__title canva-text" data-html-import-id="html-import-233" data-template-id="h3-166" style="color: rgb(0, 0, 0);">Back-end &amp; APIs</h3>
-          <div class="skill-category__items" data-html-import-id="html-import-234">
-            <div class="skill-pill canva-container" data-html-import-id="html-import-235" data-template-id="div-167" style="color: rgb(0, 0, 0);">Node.js</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-236" data-template-id="div-168" style="color: rgb(0, 0, 0);">.NET</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-237" data-template-id="div-169" style="color: rgb(0, 0, 0);">RESTful APIs</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-238" data-template-id="div-170" style="color: rgb(0, 0, 0);">GraphQL</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-239" data-template-id="div-171" style="color: rgb(0, 0, 0);">BFF</div>
-          </div>
-        </div>
-
-        <div class="skill-category glass-card" data-html-import-id="html-import-240">
-          <div class="skill-category__icon" data-html-import-id="html-import-241">
-            <i class="fas fa-vial" data-html-import-id="html-import-242"></i>
-          </div>
-          <h3 class="skill-category__title canva-text" data-html-import-id="html-import-243" data-template-id="h3-172" style="color: rgb(0, 0, 0);">Testes Automatizados</h3>
-          <div class="skill-category__items" data-html-import-id="html-import-244">
-            <div class="skill-pill canva-container" data-html-import-id="html-import-245" data-template-id="div-173" style="color: rgb(0, 0, 0);">Jest</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-246" data-template-id="div-174" style="color: rgb(0, 0, 0);">Cypress</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-247" data-template-id="div-175" style="color: rgb(0, 0, 0);">Jasmine</div>
-          </div>
-        </div>
-
-        <div class="skill-category glass-card" data-html-import-id="html-import-248">
-          <div class="skill-category__icon" data-html-import-id="html-import-249">
-            <i class="fas fa-cloud" data-html-import-id="html-import-250"></i>
-          </div>
-          <h3 class="skill-category__title canva-text" data-html-import-id="html-import-251" data-template-id="h3-176" style="color: rgb(0, 0, 0);">DevOps &amp; Cloud</h3>
-          <div class="skill-category__items" data-html-import-id="html-import-252">
-            <div class="skill-pill canva-container" data-html-import-id="html-import-253" data-template-id="div-177" style="color: rgb(0, 0, 0);">CI/CD</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-254" data-template-id="div-178" style="color: rgb(0, 0, 0);">Jenkins</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-255" data-template-id="div-179" style="color: rgb(0, 0, 0);">SonarQube</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-256" data-template-id="div-180" style="color: rgb(0, 0, 0);">OpenShift</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-257" data-template-id="div-181" style="color: rgb(0, 0, 0);">Docker</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-258" data-template-id="div-182" style="color: rgb(0, 0, 0);">AWS</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-259" data-template-id="div-183" style="color: rgb(0, 0, 0);">Azure</div>
-          </div>
-        </div>
-
-        <div class="skill-category glass-card" data-html-import-id="html-import-260">
-          <div class="skill-category__icon" data-html-import-id="html-import-261">
-            <i class="fas fa-tools" data-html-import-id="html-import-262"></i>
-          </div>
-          <h3 class="skill-category__title canva-text" data-html-import-id="html-import-263" data-template-id="h3-184" style="color: rgb(0, 0, 0);">Ferramentas &amp; Práticas</h3>
-          <div class="skill-category__items" data-html-import-id="html-import-264">
-            <div class="skill-pill canva-container" data-html-import-id="html-import-265" data-template-id="div-185" style="color: rgb(0, 0, 0);">Git</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-266" data-template-id="div-186" style="color: rgb(0, 0, 0);">NPM</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-267" data-template-id="div-187" style="color: rgb(0, 0, 0);">Splunk</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-268" data-template-id="div-188" style="color: rgb(0, 0, 0);">Scrum</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-269" data-template-id="div-189" style="color: rgb(0, 0, 0);">Code Review</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-270" data-template-id="div-190" style="color: rgb(0, 0, 0);">Micro Frontends</div>
-            <div class="skill-pill canva-container" data-html-import-id="html-import-271" data-template-id="div-191" style="color: rgb(0, 0, 0);">Web Components</div>
-          </div>
-        </div>
-
+    <!-- Estágio -->
+    <div class="timeline__item">
+     <div class="timeline__dot"></div>
+     <div class="timeline__content glass-card">
+      <div class="timeline__header">
+       <div>
+        <h3 class="timeline__role">Estagiário em Desenvolvimento de Software</h3>
+        <p class="timeline__company">
+         <i class="fas fa-building"></i> Secretaria da Controladoria Geral do Estado
+        </p>
+       </div>
+       <div class="timeline__meta">
+        <span class="timeline__date"><i class="fas fa-calendar"></i> 05/2018 - 07/2019</span>
+        <span class="timeline__location"><i class="fas fa-map-marker-alt"></i> Recife, PE</span>
+       </div>
       </div>
+      <ul class="timeline__list">
+       <li>Desenvolvi plataformas web full stack para os diversos setores da secretaria governamental e atuei na manutenção do portal da intranet.</li>
+       <li>Integrei sistemas legados com novas soluções web através de APIs.</li>
+      </ul>
+      <div class="timeline__tags">
+       <span class="tag">Python</span>
+       <span class="tag">Flask</span>
+       <span class="tag">JavaScript</span>
+       <span class="tag">jQuery</span>
+       <span class="tag">WordPress</span>
+       <span class="tag">PostgreSQL</span>
+       <span class="tag">Git</span>
+      </div>
+     </div>
     </div>
-  </section>
 
-  <!-- Educação & Certificações Section -->
-  <section class="section section--dark" id="educacao" data-html-import-id="html-import-272">
-    <div class="container" data-html-import-id="html-import-273">
-      <h2 class="section__title canva-text" data-html-import-id="html-import-274" data-template-id="h2-192" style="color: rgb(0, 0, 0);">
-        <span class="section__number canva-text" data-html-import-id="html-import-275" data-template-id="span-193" style="color: rgb(0, 0, 0);">04.</span><canva-inline-text data-template-id="canva-inline-text-194" class="canva-text" style="color: rgb(0, 0, 0);"> Educação &amp; Certificações</canva-inline-text></h2>
-      <div class="education-grid" data-html-import-id="html-import-276">
-        <div class="education-card glass-card" data-html-import-id="html-import-277">
-          <div class="education-card__icon" data-html-import-id="html-import-278">
-            <i class="fas fa-graduation-cap" data-html-import-id="html-import-279"></i>
-          </div>
-          <h3 class="education-card__degree canva-text" data-html-import-id="html-import-280" data-template-id="h3-195" style="color: rgb(0, 0, 0);">Pós-Graduação em Arquitetura de Software</h3>
-          <p class="education-card__institution canva-text" data-html-import-id="html-import-281" data-template-id="p-196" style="color: rgb(0, 0, 0);">PUC Minas</p>
-          <p class="education-card__period canva-text" data-html-import-id="html-import-282" data-template-id="p-197" style="color: rgb(0, 0, 0);"><i class="fas fa-calendar" data-html-import-id="html-import-283"></i><canva-inline-text data-template-id="canva-inline-text-198" class="canva-text" style="color: rgb(0, 0, 0);"> 10/2024 - 09/2025</canva-inline-text></p>
-          <p class="education-card__location canva-text" data-html-import-id="html-import-284" data-template-id="p-199" style="color: rgb(0, 0, 0);"><i class="fas fa-map-marker-alt" data-html-import-id="html-import-285"></i><canva-inline-text data-template-id="canva-inline-text-200" class="canva-text" style="color: rgb(0, 0, 0);"> Minas Gerais</canva-inline-text></p>
-        </div>
-        <div class="education-card glass-card" data-html-import-id="html-import-286">
-          <div class="education-card__icon" data-html-import-id="html-import-287">
-            <i class="fas fa-university" data-html-import-id="html-import-288"></i>
-          </div>
-          <h3 class="education-card__degree canva-text" data-html-import-id="html-import-289" data-template-id="h3-201" style="color: rgb(0, 0, 0);">Bacharelado em Sistemas de Informação</h3>
-          <p class="education-card__institution canva-text" data-html-import-id="html-import-290" data-template-id="p-202" style="color: rgb(0, 0, 0);">Centro Universitário Joaquim Nabuco</p>
-          <p class="education-card__period canva-text" data-html-import-id="html-import-291" data-template-id="p-203" style="color: rgb(0, 0, 0);"><i class="fas fa-calendar" data-html-import-id="html-import-292"></i><canva-inline-text data-template-id="canva-inline-text-204" class="canva-text" style="color: rgb(0, 0, 0);"> 02/2016 - 12/2019</canva-inline-text></p>
-          <p class="education-card__location canva-text" data-html-import-id="html-import-293" data-template-id="p-205" style="color: rgb(0, 0, 0);"><i class="fas fa-map-marker-alt" data-html-import-id="html-import-294"></i><canva-inline-text data-template-id="canva-inline-text-206" class="canva-text" style="color: rgb(0, 0, 0);"> Pernambuco</canva-inline-text></p>
-        </div>
-      </div>
+   </div>
+  </div>
+ </section>
 
-      <h3 class="subsection-title canva-text" data-html-import-id="html-import-295" data-template-id="h3-207" style="color: rgb(0, 0, 0);">Certificações</h3>
-      <div class="certifications-grid" data-html-import-id="html-import-296">
-        <div class="certification-card glass-card" data-html-import-id="html-import-297">
-          <div class="certification-card__badge" data-html-import-id="html-import-298">
-            <i class="fab fa-aws" data-html-import-id="html-import-299"></i>
-          </div>
-          <h4 class="certification-card__name canva-text" data-html-import-id="html-import-300" data-template-id="h4-208" style="color: rgb(0, 0, 0);">AWS Certified Cloud Practitioner</h4>
-        </div>
-        <div class="certification-card glass-card" data-html-import-id="html-import-301">
-          <div class="certification-card__badge" data-html-import-id="html-import-302">
-            <i class="fas fa-clipboard-check" data-html-import-id="html-import-303"></i>
-          </div>
-          <h4 class="certification-card__name canva-text" data-html-import-id="html-import-304" data-template-id="h4-209" style="color: rgb(0, 0, 0);">Scrum Foundation Professional Certificate</h4>
-        </div>
-      </div>
+ <!-- Competências Section -->
+ <section class="section" id="competencias">
+  <div class="container">
+   <h2 class="section__title">
+    <span class="section__number">03.</span> Competências Técnicas
+   </h2>
+   <div class="skills-grid">
+
+    <div class="skill-category glass-card">
+     <div class="skill-category__icon">
+      <i class="fas fa-code"></i>
+     </div>
+     <h3 class="skill-category__title">Front-end</h3>
+     <div class="skill-category__items">
+      <div class="skill-pill">React.js</div>
+      <div class="skill-pill">Angular 2+</div>
+      <div class="skill-pill">RxJS</div>
+      <div class="skill-pill">NgRx</div>
+      <div class="skill-pill">JavaScript</div>
+      <div class="skill-pill">TypeScript</div>
+      <div class="skill-pill">HTML5</div>
+      <div class="skill-pill">CSS3</div>
+      <div class="skill-pill">SASS</div>
+      <div class="skill-pill">Bootstrap</div>
+     </div>
     </div>
-  </section>
 
-  <!-- Contato Section -->
-  <section class="section" id="contato" data-html-import-id="html-import-305">
-    <div class="container" data-html-import-id="html-import-306">
-      <h2 class="section__title canva-text" data-html-import-id="html-import-307" data-template-id="h2-210" style="color: rgb(0, 0, 0);">
-        <span class="section__number canva-text" data-html-import-id="html-import-308" data-template-id="span-211" style="color: rgb(0, 0, 0);">05.</span><canva-inline-text data-template-id="canva-inline-text-212" class="canva-text" style="color: rgb(0, 0, 0);"> Contato</canva-inline-text></h2>
-      <div class="contact" data-html-import-id="html-import-309">
-        <p class="contact__intro canva-text" data-html-import-id="html-import-310" data-template-id="p-213" style="color: rgb(0, 0, 0);">Estou sempre aberto a novas oportunidades e conexões. Sinta-se à vontade para entrar em contato!</p>
-        <div class="contact__cards" data-html-import-id="html-import-311">
-          <a href="mailto:allissonfiilipe@gmail.com" class="contact-card glass-card canva-link" data-html-import-id="html-import-312" data-template-id="a-214" style="color: rgb(0, 0, 238);">
-            <i class="fas fa-envelope" data-html-import-id="html-import-313"></i>
-            <span data-html-import-id="html-import-314" data-template-id="span-215" class="canva-text" style="color: rgb(0, 0, 238);">allissonfiilipe@gmail.com</span>
-          </a>
-          <a href="tel:+5511917288390" class="contact-card glass-card canva-link" data-html-import-id="html-import-315" data-template-id="a-216" style="color: rgb(0, 0, 238);">
-            <i class="fas fa-phone" data-html-import-id="html-import-316"></i>
-            <span data-html-import-id="html-import-317" data-template-id="span-217" class="canva-text" style="color: rgb(0, 0, 238);">(11) 91728-8390</span>
-          </a>
-          <a href="https://www.linkedin.com/in/allisson-farias/" target="_blank" rel="noopener" class="contact-card glass-card canva-link" data-html-import-id="html-import-318" data-template-id="a-218" style="color: rgb(0, 0, 238);">
-            <i class="fab fa-linkedin" data-html-import-id="html-import-319"></i>
-            <span data-html-import-id="html-import-320" data-template-id="span-219" class="canva-text" style="color: rgb(0, 0, 238);">LinkedIn</span>
-          </a>
-          <a href="https://github.com/AllissonFilipe" target="_blank" rel="noopener" class="contact-card glass-card canva-link" data-html-import-id="html-import-321" data-template-id="a-220" style="color: rgb(0, 0, 238);">
-            <i class="fab fa-github" data-html-import-id="html-import-322"></i>
-            <span data-html-import-id="html-import-323" data-template-id="span-221" class="canva-text" style="color: rgb(0, 0, 238);">GitHub</span>
-          </a>
-        </div>
-        <a href="mailto:allissonfiilipe@gmail.com" class="btn btn--primary btn--lg canva-link" data-html-import-id="html-import-324" data-template-id="a-222" style="color: rgb(0, 0, 238);">
-          <i class="fas fa-paper-plane" data-html-import-id="html-import-325"></i><canva-inline-text data-template-id="canva-inline-text-223" class="canva-text" style="color: rgb(0, 0, 238);"> Enviar mensagem</canva-inline-text></a>
-      </div>
+    <div class="skill-category glass-card">
+     <div class="skill-category__icon">
+      <i class="fas fa-server"></i>
+     </div>
+     <h3 class="skill-category__title">Back-end & APIs</h3>
+     <div class="skill-category__items">
+      <div class="skill-pill">Node.js</div>
+      <div class="skill-pill">.NET</div>
+      <div class="skill-pill">RESTful APIs</div>
+      <div class="skill-pill">GraphQL</div>
+      <div class="skill-pill">BFF</div>
+     </div>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer" data-html-import-id="html-import-326">
-    <div class="container" data-html-import-id="html-import-327">
-      <p class="footer__text canva-text" data-html-import-id="html-import-328" data-template-id="p-224" style="color: rgb(0, 0, 0);"><canva-inline-text data-template-id="canva-inline-text-225" class="canva-text" style="color: rgb(0, 0, 0);">Projetado &amp; desenvolvido por </canva-inline-text><strong data-html-import-id="html-import-329" data-template-id="strong-226" class="canva-text" style="color: rgb(0, 0, 0);">Allisson Farias</strong>
-      </p>
-      <div class="footer__socials" data-html-import-id="html-import-330">
-        <a href="https://github.com/AllissonFilipe" target="_blank" rel="noopener" aria-label="GitHub" data-html-import-id="html-import-331">
-          <i class="fab fa-github" data-html-import-id="html-import-332"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/allisson-farias/" target="_blank" rel="noopener" aria-label="LinkedIn" data-html-import-id="html-import-333">
-          <i class="fab fa-linkedin" data-html-import-id="html-import-334"></i>
-        </a>
-        <a href="mailto:allissonfiilipe@gmail.com" aria-label="Email" data-html-import-id="html-import-335">
-          <i class="fas fa-envelope" data-html-import-id="html-import-336"></i>
-        </a>
-      </div>
+    <div class="skill-category glass-card">
+     <div class="skill-category__icon">
+      <i class="fas fa-vial"></i>
+     </div>
+     <h3 class="skill-category__title">Testes Automatizados</h3>
+     <div class="skill-category__items">
+      <div class="skill-pill">Jest</div>
+      <div class="skill-pill">Cypress</div>
+      <div class="skill-pill">Jasmine</div>
+     </div>
     </div>
-  </footer>
 
-  <script src="script.js" data-html-import-id="html-import-337"></script>
+    <div class="skill-category glass-card">
+     <div class="skill-category__icon">
+      <i class="fas fa-cloud"></i>
+     </div>
+     <h3 class="skill-category__title">DevOps & Cloud</h3>
+     <div class="skill-category__items">
+      <div class="skill-pill">CI/CD</div>
+      <div class="skill-pill">Jenkins</div>
+      <div class="skill-pill">SonarQube</div>
+      <div class="skill-pill">OpenShift</div>
+      <div class="skill-pill">Docker</div>
+      <div class="skill-pill">AWS</div>
+      <div class="skill-pill">Azure</div>
+     </div>
+    </div>
 
+    <div class="skill-category glass-card">
+     <div class="skill-category__icon">
+      <i class="fas fa-tools"></i>
+     </div>
+     <h3 class="skill-category__title">Ferramentas & Práticas</h3>
+     <div class="skill-category__items">
+      <div class="skill-pill">Git</div>
+      <div class="skill-pill">NPM</div>
+      <div class="skill-pill">Splunk</div>
+      <div class="skill-pill">Scrum</div>
+      <div class="skill-pill">Code Review</div>
+      <div class="skill-pill">Micro Frontends</div>
+      <div class="skill-pill">Web Components</div>
+     </div>
+    </div>
 
-<script src="/_sdk/editing_sdk.js"></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a042bb84cf376348',t:'MTc4MDE5NjQ3MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body></html>
+   </div>
+  </div>
+ </section>
+
+ <!-- Educação & Certificações Section -->
+ <section class="section section--dark" id="educacao">
+  <div class="container">
+   <h2 class="section__title">
+    <span class="section__number">04.</span> Educação & Certificações
+   </h2>
+   <div class="education-grid">
+    <div class="education-card glass-card">
+     <div class="education-card__icon">
+      <i class="fas fa-graduation-cap"></i>
+     </div>
+     <h3 class="education-card__degree">Pós-Graduação em Arquitetura de Software</h3>
+     <p class="education-card__institution">PUC Minas</p>
+     <p class="education-card__period"><i class="fas fa-calendar"></i> 10/2024 - 09/2025</p>
+     <p class="education-card__location"><i class="fas fa-map-marker-alt"></i> Minas Gerais</p>
+    </div>
+    <div class="education-card glass-card">
+     <div class="education-card__icon">
+      <i class="fas fa-university"></i>
+     </div>
+     <h3 class="education-card__degree">Bacharelado em Sistemas de Informação</h3>
+     <p class="education-card__institution">Centro Universitário Joaquim Nabuco</p>
+     <p class="education-card__period"><i class="fas fa-calendar"></i> 02/2016 - 12/2019</p>
+     <p class="education-card__location"><i class="fas fa-map-marker-alt"></i> Pernambuco</p>
+    </div>
+   </div>
+
+   <h3 class="subsection-title">Certificações</h3>
+   <div class="certifications-grid">
+    <div class="certification-card glass-card">
+     <div class="certification-card__badge">
+      <i class="fab fa-aws"></i>
+     </div>
+     <h4 class="certification-card__name">AWS Certified Cloud Practitioner</h4>
+    </div>
+    <div class="certification-card glass-card">
+     <div class="certification-card__badge">
+      <i class="fas fa-clipboard-check"></i>
+     </div>
+     <h4 class="certification-card__name">Scrum Foundation Professional Certificate</h4>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- Contato Section -->
+ <section class="section" id="contato">
+  <div class="container">
+   <h2 class="section__title">
+    <span class="section__number">05.</span> Contato
+   </h2>
+   <div class="contact">
+    <p class="contact__intro">
+     Estou sempre aberto a novas oportunidades e conexões. Sinta-se à vontade para entrar em contato!
+    </p>
+    <div class="contact__cards">
+     <a href="mailto:allissonfiilipe@gmail.com" class="contact-card glass-card">
+      <i class="fas fa-envelope"></i>
+      <span>allissonfiilipe@gmail.com</span>
+     </a>
+     <a href="tel:+5511917288390" class="contact-card glass-card">
+      <i class="fas fa-phone"></i>
+      <span>(11) 91728-8390</span>
+     </a>
+     <a href="https://www.linkedin.com/in/allisson-farias/" target="_blank" rel="noopener" class="contact-card glass-card">
+      <i class="fab fa-linkedin"></i>
+      <span>LinkedIn</span>
+     </a>
+     <a href="https://github.com/AllissonFilipe" target="_blank" rel="noopener" class="contact-card glass-card">
+      <i class="fab fa-github"></i>
+      <span>GitHub</span>
+     </a>
+    </div>
+    <a href="mailto:allissonfiilipe@gmail.com" class="btn btn--primary btn--lg">
+     <i class="fas fa-paper-plane"></i> Enviar mensagem
+    </a>
+   </div>
+  </div>
+ </section>
+
+ <!-- Footer -->
+ <footer class="footer">
+  <div class="container">
+   <p class="footer__text">
+    Projetado & desenvolvido por <strong>Allisson Farias</strong>
+   </p>
+   <div class="footer__socials">
+    <a href="https://github.com/AllissonFilipe" target="_blank" rel="noopener" aria-label="GitHub">
+     <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/allisson-farias/" target="_blank" rel="noopener" aria-label="LinkedIn">
+     <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="mailto:allissonfiilipe@gmail.com" aria-label="Email">
+     <i class="fas fa-envelope"></i>
+    </a>
+   </div>
+  </div>
+ </footer>
+
+ <script src="js/scripts.js"></script>
+</body>
+</html>
+
